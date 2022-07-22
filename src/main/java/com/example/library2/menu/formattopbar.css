@@ -1,0 +1,104 @@
+.buttonNormal {
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-padding: 5 5 5 5;
+    -fx-text-fill: #C6C6C6;
+    -fx-alignment: TOP_CENTER;
+}
+
+.buttonEnter {
+    -fx-font-size: 20px;
+    -fx-background-color: #E9E9E9;
+    -fx-padding: 5 5 5 5;
+    -fx-text-fill: #C6C6C6;
+    -fx-alignment: TOP_CENTER;
+}
+
+.buttonChoose {
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-padding: 5 5 5 5;
+    -fx-text-fill: #393333;
+    -fx-alignment: TOP_CENTER;
+    -fx-border-color: #039BE5;
+    -fx-border-width: 0 0 5 0;
+}
+
+.textFillOnEnter {
+    -fx-background-color: #F2F2F2;
+}
+
+.textFillOnExit {
+    -fx-background-color: white;
+}
+
+.anchor {
+    -fx-background-color: white;
+
+}
+
+.Hline {
+    -fx-fill: #E9E9E9;
+    -fx-stroke: #E9E9E9;
+}
+
+.VlineChoose {
+    -fx-fill: #039BE5;
+    -fx-stroke: #039BE5;
+    -fx-stroke-width: 5px;
+}
+
+.findButton {
+    -fx-font-size: 20px;
+    -fx-background-color:#4485F3;
+    -fx-padding: 0 0 0 0;
+    -fx-text-fill: #4485F3;
+}
+
+.textFind {
+    -fx-font-size: 20px;
+    /* -fx-font-weight: bold; */
+    -fx-font-family: DejaVu Sans Mono;
+    -fx-border-color: #E9E9E9 ;  
+    -fx-border-width: 2px ; 
+}
+
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+
+.table-row-cell{
+    -fx-border-color: white;
+    -fx-table-cell-border-color:white;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 17px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: steelblue; 
+ }
+ .table-row-cell:selected .text {
+        -fx-fill: red ;
+ 
+ }
+
+.rowOnEnter {
+    -fx-background-color: #E9E9E9;
+}
+
+.rowOnExit {
+    -fx-background-color: white;
+}
+
+
+
+.table-view{
+    -fx-border-color: #aa8080;
+    -fx-background-color: white;
+    /* -fx-control-inner-background: white; */
+}

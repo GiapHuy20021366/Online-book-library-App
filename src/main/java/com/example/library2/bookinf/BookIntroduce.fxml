@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.bookinf.BookIntroduce">
+    <children>
+        <ImageView fitHeight="700.0" fitWidth="1270.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Pane fx:id="bookDisplay" layoutX="205.0" layoutY="-2.0" prefHeight="850.0" prefWidth="750.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="750.0">
+            <children>
+                <ScrollPane fx:id="paneForBookDisplay" prefHeight="850.0" prefWidth="1066.0">
+                    <content>
+                        <AnchorPane fx:id="BookAndAuthor" prefHeight="700.0" prefWidth="750.0">
+                            <children>
+                                <ImageView fitHeight="900.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                <AnchorPane fx:id="bookHeading" minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="747.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <ImageView fx:id="bookImg" fitHeight="238.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="547.0" AnchorPane.topAnchor="0.0" />
+                                        <Button fx:id="borrow" layoutX="386.0" layoutY="167.0" mnemonicParsing="false" onMouseClicked="#clickOrder" prefHeight="31.0" prefWidth="163.0" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="386.0" />
+                                        <Text fx:id="bookTitle" layoutX="210.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="136.6708984375" AnchorPane.leftAnchor="190.0" />
+                                        <Button fx:id="like" layoutX="571.0" layoutY="167.0" mnemonicParsing="false" onMouseClicked="#clickLike" prefHeight="31.0" prefWidth="139.0" text="Button" AnchorPane.bottomAnchor="0.0" />
+                                        <Text fx:id="rate" layoutX="210.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="190.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Text>
+                              <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="210.0" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </Pane>
+      <AnchorPane fx:id="leftMenu" onMouseEntered="#showLeftMenu" onMouseExited="#hideLeftMenu" prefHeight="850.0" prefWidth="139.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="15.0" layoutX="277.0" layoutY="822.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <ImageView fitHeight="19.0" fitWidth="15.0" layoutY="831.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="285.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ImageView fitHeight="25.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

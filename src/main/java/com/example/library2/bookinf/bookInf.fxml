@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="overall" prefHeight="700.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.bookinf.BookInf">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1270.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="bookDisplay" layoutX="205.0" layoutY="-2.0" prefHeight="700.0" prefWidth="750.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="315.0">
+         <children>
+            <ScrollPane fx:id="paneForBookDisplay" prefHeight="700.0" prefWidth="1066.0">
+               <content>
+                  <AnchorPane fx:id="BookAndAuthor" prefHeight="700.0" prefWidth="750.0">
+                     <children>
+                        <ImageView fitHeight="600.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                      <AnchorPane fx:id="bookHeading" minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="747.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fx:id="bookImg" fitHeight="238.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="547.0" AnchorPane.topAnchor="0.0" />
+                              <Button fx:id="borrow" layoutX="386.0" layoutY="167.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="163.0" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="198.0" />
+                              <Text fx:id="bookTitle" layoutX="210.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="136.6708984375" AnchorPane.leftAnchor="190.0" />
+                              <Button fx:id="like" layoutX="570.0" layoutY="167.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="140.0" text="Button" AnchorPane.bottomAnchor="0.0" />
+                              <Text fx:id="rate" layoutX="210.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.bottomAnchor="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Button fx:id="goBack" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="31.0" prefWidth="204.0" text="Button" />
+   </children>
+</AnchorPane>

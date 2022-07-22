@@ -1,0 +1,67 @@
+.buttonLeft {
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-border-color:white;
+}
+
+.buttonLeftEnter {
+    -fx-font-size: 20px;
+    -fx-background-color: #ED3B3B;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-border-color:#ED3B3B;
+}
+.myBookButton {
+    -fx-font-size: 20px;
+    -fx-background-color: #F5F5F5;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.buttonOnEnter {
+     -fx-font-size: 20px;
+    -fx-background-color: #E9E9E9;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.borowBookButton {
+    -fx-font-size: 20px;
+    -fx-background-color:#F5F5F5;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1380BA;
+}
+
+.borowBookButtonOnEnter {
+    -fx-font-size: 20px;
+    -fx-background-color:#E9E9E9;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1380BA;
+}
+
+.BookButton {
+    -fx-font-size: 40px;
+    -fx-background-color: #039BE5;
+    -fx-border-color: #039BE5;
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    
+}
+.accountAchor {
+    -fx-background-color: #F5F5F5;
+
+}
+
+.line {
+    -fx-fill: #E9E9E9;
+    -fx-stroke: #E9E9E9;
+}

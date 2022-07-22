@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="overall" prefHeight="850.0" prefWidth="280.0" styleClass="accountAchor" stylesheets="@format.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.menu.AccountUtility">
+   <children>
+      <Button fx:id="goBack" layoutX="7.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#goToBack" onMouseEntered="#goBackEnter" onMouseExited="#goBackExit" prefHeight="337.0" prefWidth="64.0" styleClass="buttonLeft" text="&lt;" AnchorPane.leftAnchor="0.0" />
+      <Button fx:id="myBook" layoutX="39.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#goToMyBook" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" prefHeight="54.0" prefWidth="225.0" styleClass="myBookButton" text="Sách của tôi" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="0.0" />
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#goHome" prefHeight="73.0" prefWidth="286.0" styleClass="BookButton" text="Sách" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="borrowBook" layoutX="63.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#goToBorrow" onMouseEntered="#onEnterButtonBorrow" onMouseExited="#onExitButtonBorrow" prefHeight="54.0" prefWidth="216.0" styleClass="borowBookButton" text="Mượn Sách" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="0.0" />
+      <Line endX="100.0" layoutX="167.0" layoutY="189.0" startX="-100.0" stroke="#0000003c" AnchorPane.topAnchor="180.0" />
+      <Button fx:id="favorite" layoutX="64.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#goToFavorite" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" prefHeight="54.0" prefWidth="216.0" styleClass="myBookButton" text="Yêu thích" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="newest" layoutX="64.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#goToNewest" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" prefHeight="54.0" prefWidth="225.0" styleClass="myBookButton" text="Mới nhất" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="forYou" layoutX="69.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#goToSpendToYou" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" prefHeight="54.0" prefWidth="225.0" styleClass="myBookButton" text="Trang chủ" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="rank" layoutX="72.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#goToRank" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" prefHeight="54.0" prefWidth="225.0" styleClass="myBookButton" text="Bảng xếp hạng" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="0.0" />
+      <Line endX="280.0" layoutX="125.0" layoutY="397.0" stroke="#00000045" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="410.0" />
+      <MenuButton fx:id="manageTool" alignment="CENTER" layoutY="465.0" mnemonicParsing="false" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" popupSide="RIGHT" prefHeight="54.0" prefWidth="286.0" styleClass="myBookButton" text="Công cụ quản trị">
+         <items>
+            <MenuItem fx:id="statistic" mnemonicParsing="false" onAction="#goToStatistic" text="Thống kê" />
+            <MenuItem fx:id="check" mnemonicParsing="false" onAction="#goToCheck" text="Kiểm tra đơn đặt" />
+            <MenuItem fx:id="update" mnemonicParsing="false" onAction="#goToUpdate" text="Sever" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="account" alignment="CENTER" contentDisplay="CENTER" layoutY="411.0" mnemonicParsing="false" onMouseEntered="#onEnterButton" onMouseExited="#onExitButton" popupSide="RIGHT" prefHeight="54.0" prefWidth="286.0" styleClass="myBookButton" text="Tài khoản" textAlignment="CENTER">
+         <items>
+            <MenuItem fx:id="log" mnemonicParsing="false" onAction="#goToLog" text="Đăng nhập" />
+         </items>
+      </MenuButton>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

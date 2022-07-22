@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="40.0" prefWidth="890.0" styleClass="anchor" stylesheets="@formattopbar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.menu.TopBar">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <Button fx:id="home" alignment="CENTER" layoutX="185.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#onClick" onMouseEntered="#onEnter" onMouseExited="#onExit" prefHeight="40.0" prefWidth="185.0" styleClass="buttonNormal" text="Trang chủ" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <Button fx:id="rank" alignment="CENTER" layoutX="370.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#onClick" onMouseEntered="#onEnter" onMouseExited="#onExit" prefHeight="40.0" prefWidth="185.0" styleClass="buttonNormal" text="Bảng xếp hạng" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <Button fx:id="newS" alignment="CENTER" layoutX="555.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#onClick" onMouseEntered="#onEnter" onMouseExited="#onExit" prefHeight="42.0" prefWidth="169.0" styleClass="buttonNormal" text="Nội dung mới" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <Button fx:id="borrowed" alignment="CENTER" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#onClick" onMouseEntered="#onEnter" onMouseExited="#onExit" prefHeight="40.0" prefWidth="185.0" styleClass="buttonNormal" text="Đã mượn" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <Line endX="185.0" endY="38.0" startX="185.0" startY="10.0" styleClass="Hline" />
+      <Button fx:id="favorite" alignment="CENTER" layoutX="712.0" mnemonicParsing="false" onMouseClicked="#onClick" onMouseEntered="#onEnter" onMouseExited="#onExit" prefHeight="46.0" prefWidth="169.0" styleClass="buttonNormal" text="Yêu thích" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+   </children>
+</AnchorPane>
